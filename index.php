@@ -40,7 +40,7 @@ function get_http_response_code($redirect){
   }if ($_GET['id'] != ""){
     $id                     = $_GET['id'];
     $ori                    = my_simple_crypt($id, 'd');
-    $apikey                 = ''; //your api key
+    $apikey                 = 'AIzaSyDhFAlrsu5whoE_akeRUOF7dwQZSB7mQCM'; //your api key
     $url                    = "https://www.googleapis.com/drive/v2/files/$ori?supportsTeamDrives=true&key=$apikey";
     $redirect               = "https://www.googleapis.com/drive/v3/files/$ori?supportsTeamDrives=true&alt=media&key=$apikey";
     $json                   = file_get_contents($url);
