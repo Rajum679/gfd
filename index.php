@@ -25,8 +25,8 @@ function get_http_response_code($redirect){
     $headers = get_headers($redirect);
     return substr($headers[0], 9, 3);
   }function my_simple_crypt($string, $action = 'e'){
-    $secret_key     = ''; //your key
-    $secret_iv      = ''; //your iv
+    $secret_key     = '7PjxHcyHEO9bKZM3yMXQCjIQ'; //your key
+    $secret_iv      = '796677035367-ouse26eq0u4nhtaqv4m1m80a56vd3ce3.apps.googleusercontent.com'; //your iv
     $output         = false;
     $encrypt_method = "AES-256-CBC";
     $key            = hash('sha256', $secret_key);
