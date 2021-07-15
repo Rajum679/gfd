@@ -19,8 +19,8 @@ function getDriveID($url)
 }
 function my_simple_crypt($string, $action = 'e')
 {
-    $secret_key     = '7PjxHcyHEO9bKZM3yMXQCjIQ';
-    $secret_iv      = '796677035367-ouse26eq0u4nhtaqv4m1m80a56vd3ce3.apps.googleusercontent.com';
+    $secret_key     = '';
+    $secret_iv      = '';
     $output         = false;
     $encrypt_method = "AES-256-CBC";
     $key            = hash('sha256', $secret_key);
